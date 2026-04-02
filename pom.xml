@@ -44,11 +44,17 @@
     </distributionManagement>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <image>
+                            <name>docker.io/library/${project.artifactId}</name>
+                        </image>
+                    </configuration>
                     <executions>
                         <execution>
                             <goals>
