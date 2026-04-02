@@ -44,7 +44,6 @@
     </distributionManagement>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
