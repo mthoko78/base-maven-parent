@@ -53,6 +53,8 @@
                     <configuration>
                         <image>
                             <name>docker.io/library/${project.artifactId}</name>
+                            <builder>paketobuildpacks/builder-jammy-base:0.4.557</builder>
+                            <runImage>docker.io/paketobuildpacks/run-jammy-base:0.1.216</runImage>
                         </image>
                     </configuration>
                     <executions>
